@@ -80,6 +80,11 @@ This section contains papers focused on Ray (e.g. RAY-based library whitepapers,
 
 - [RAY Discussions](https://discuss.ray.io/)
 - [Stack Overflow](https://stackoverflow.com/questions/tagged/ray)
+- [Slack](https://forms.gle/9TSdDYUgxYs8SA9e8)
+- [GitHub Issues](https://github.com/ray-project/ray/issues)
+- [Meetup Group](https://www.meetup.com/Bay-Area-Ray-Meetup/)
+- [Twitter](https://twitter.com/raydistributed)
+
 
 ## Contributing
 
