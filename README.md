@@ -52,6 +52,11 @@ This section contains libraries that are well-made and useful, but have not nece
 
 <a name="papers" />
 
+# rllib 
+- (Deep reinforcement learning at Riot Games by Ben Kasper)[https://youtu.be/r6ErUh5sjXQ] - reinforcement learning for game development in production
+
+
+
 ## Papers
 
 This section contains papers focused on Ray (e.g. RAY-based library whitepapers, research on RAY, etc). Papers implemented in RAY are listed in the [Models/Projects](#projects) section.
