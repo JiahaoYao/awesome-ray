@@ -40,6 +40,7 @@ This section contains libraries that are well-made and useful, but have not nece
 ### Ray + JAX / TPU
 
 - [Swarm-jax](https://github.com/kingoflolz/swarm-jax) - Swarm training framework using Haiku + JAX + Ray for layer parallel transformer language models on unreliable, heterogeneous nodes
+- [Alpa](https://github.com/alpa-projects/alpa) - Auto parallelization for large-scale neural networks using Jax, XLA, and Ray
 
 
 ### Ray + Database
@@ -72,6 +73,7 @@ This section contains papers focused on Ray (e.g. RAY-based library whitepapers,
 
 
 - [Reddit post](https://news.ycombinator.com/item?id=27730807) 
+- [Load PyTorch Models 340 Times Faster with Ray](https://medium.com/ibm-data-ai/how-to-load-pytorch-models-340-times-faster-with-ray-8be751a6944c)
 
 
 <a name="community" />
