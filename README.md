@@ -49,6 +49,9 @@ This section contains libraries that are well-made and useful, but have not nece
 
 - [Balsa](https://github.com/balsa-project/balsa#cluster-mode) Balsa is a learned SQL query optimizer. It tailor optimizes your SQL queries to find the best execution plans for your hardware and engine.
 
+### Ray + X (integration)
+
+- [prefect-ray](https://github.com/PrefectHQ/prefect-ray) Prefect integrations with Ray
 
 <a name="videos" />
 
@@ -56,7 +59,7 @@ This section contains libraries that are well-made and useful, but have not nece
 
 <a name="papers" />
 
-# rllib 
+### rllib 
 - [Deep reinforcement learning at Riot Games by Ben Kasper](https://youtu.be/r6ErUh5sjXQ) - reinforcement learning for game development in production
 
 
