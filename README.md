@@ -52,6 +52,11 @@ This section contains libraries that are well-made and useful, but have not nece
 ### Ray + X (integration)
 
 - [prefect-ray](https://github.com/PrefectHQ/prefect-ray) Prefect integrations with Ray
+- [xgboost_ray](https://github.com/ray-project/xgboost_ray) Distributed XGBoost on Ray
+
+### Sky-Project
+- [SkyPilot](https://github.com/skypilot-org/skypilot) a framework for easily running machine learning workloads on any cloud through a unified interface
+
 
 <a name="videos" />
 
