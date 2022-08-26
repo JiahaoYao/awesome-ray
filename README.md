@@ -57,6 +57,8 @@ This section contains libraries that are well-made and useful, but have not nece
 ### Sky-Project
 - [SkyPilot](https://github.com/skypilot-org/skypilot) a framework for easily running machine learning workloads on any cloud through a unified interface
 
+### Misc
+- [AutoGluon](https://github.com/awslabs/autogluon) AutoML for Image, Text, and Tabular Data
 
 <a name="videos" />
 
