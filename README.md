@@ -91,6 +91,13 @@ This section contains papers focused on Ray (e.g. RAY-based library whitepapers,
 - [Reddit post](https://news.ycombinator.com/item?id=27730807) 
 - [Load PyTorch Models 340 Times Faster with Ray](https://medium.com/ibm-data-ai/how-to-load-pytorch-models-340-times-faster-with-ray-8be751a6944c)
 
+## books 
+
+- [Learning Ray](https://github.com/maxpumperla/learning_ray) Learning Ray - Flexible Distributed Python for Machine Learning
+
+## course
+
+- [RL course](https://github.com/anyscale/rl-course) Applied Reinforcement Learning with RLlib
 
 <a name="community" />
 
