@@ -88,6 +88,7 @@ This section contains papers focused on Ray (e.g. RAY-based library whitepapers,
 ## Tutorials and Blog Posts
 
 
+- [Programming in Ray: Tips for first-time users](https://rise.cs.berkeley.edu/blog/ray-tips-for-first-time-users)
 - [Reddit post](https://news.ycombinator.com/item?id=27730807) 
 - [Load PyTorch Models 340 Times Faster with Ray](https://medium.com/ibm-data-ai/how-to-load-pytorch-models-340-times-faster-with-ray-8be751a6944c)
 
