@@ -100,6 +100,11 @@ This section contains papers focused on Ray (e.g. RAY-based library whitepapers,
 
 - [RL course](https://github.com/anyscale/rl-course) Applied Reinforcement Learning with RLlib
 
+
+## cheatsheet
+
+- [Ray design doc](https://docs.google.com/document/d/167rnnDFIVRhHhK4mznEIemOtj63IOhtIPvSYaPgI4Fg/edit#heading=h.5jeo2fupy3yv)
+
 <a name="community" />
 
 ## Community
