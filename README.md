@@ -60,6 +60,9 @@ This section contains libraries that are well-made and useful, but have not nece
 ### distributed computing
 - [Fugue](https://github.com/fugue-project/fugue) a unified interface for distributed computing that lets users execute Python, pandas, and SQL code on Ray without rewrites.
 
+### Ray AIR
+- [Ray on Azure ML](https://github.com/microsoft/ray-on-aml) Turning AML compute into Ray cluster
+
 ### Misc
 - [AutoGluon](https://github.com/awslabs/autogluon) AutoML for Image, Text, and Tabular Data
 - [Aws-samples](https://github.com/aws-samples/aws-samples-for-ray) Ray on Amazon SageMaker/EC2/EKS/EMR
