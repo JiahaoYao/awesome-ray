@@ -54,8 +54,9 @@ This section contains libraries that are well-made and useful, but have not nece
 - [prefect-ray](https://github.com/PrefectHQ/prefect-ray) Prefect integrations with Ray
 - [xgboost_ray](https://github.com/ray-project/xgboost_ray) Distributed XGBoost on Ray
 
-### Sky-Project
+### Ray-Project
 - [SkyPilot](https://github.com/skypilot-org/skypilot) a framework for easily running machine learning workloads on any cloud through a unified interface
+- [Exoshuffle-CloudSort](https://github.com/exoshuffle/cloudsort) the winning entry of the [2022 CloudSort Benchmark](http://sortbenchmark.org/) in the Indy category.
 
 ### distributed computing
 - [Fugue](https://github.com/fugue-project/fugue) a unified interface for distributed computing that lets users execute Python, pandas, and SQL code on Ray without rewrites.
