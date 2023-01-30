@@ -48,6 +48,7 @@ This section contains libraries that are well-made and useful, but have not nece
 ### Ray + Database
 
 - [Balsa](https://github.com/balsa-project/balsa#cluster-mode) Balsa is a learned SQL query optimizer. It tailor optimizes your SQL queries to find the best execution plans for your hardware and engine.
+- [RaySQL](https://github.com/andygrove/ray-sql) Distributed SQL Query Engine in Python using Ray
 
 ### Ray + X (integration)
 
