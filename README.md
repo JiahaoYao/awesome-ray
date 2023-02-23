@@ -68,6 +68,7 @@ This section contains libraries that are well-made and useful, but have not nece
 ### Misc
 - [AutoGluon](https://github.com/awslabs/autogluon) AutoML for Image, Text, and Tabular Data
 - [Aws-samples](https://github.com/aws-samples/aws-samples-for-ray) Ray on Amazon SageMaker/EC2/EKS/EMR
+- [KubeRay](https://github.com/ray-project/kuberay) A toolkit to run Ray applications on Kubernetes
 
 <a name="videos" />
 
