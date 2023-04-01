@@ -62,6 +62,10 @@ This section contains libraries that are well-made and useful, but have not nece
 
 ### distributed computing
 - [Fugue](https://github.com/fugue-project/fugue) a unified interface for distributed computing that lets users execute Python, pandas, and SQL code on Ray without rewrites.
+- [Daft](https://github.com/Eventual-Inc/Daft) is a fast, Pythonic and scalable open-source dataframe library built for Python and Machine Learning workloads.
+- [Flower](https://github.com/adap/flower)(flwr) is a framework for building federated learning systems. Uses Ray for scaling out experiments from desktop, single GPU rack, or multi-node GPU cluster.
+- [Modin](https://github.com/modin-project/modin): Scale your pandas workflows by changing one line of code. Uses Ray for transparently scaling out to multiple nodes.
+- [Volcano](https://github.com/volcano-sh/volcano) is a batch system built on Kubernetes. It provides a suite of mechanisms that are commonly required by many classes of batch & elastic workloads.
 
 ### Ray AIR
 - [Ray on Azure ML](https://github.com/microsoft/ray-on-aml) Turning AML compute into Ray cluster
@@ -70,6 +74,10 @@ This section contains libraries that are well-made and useful, but have not nece
 - [AutoGluon](https://github.com/awslabs/autogluon) AutoML for Image, Text, and Tabular Data
 - [Aws-samples](https://github.com/aws-samples/aws-samples-for-ray) Ray on Amazon SageMaker/EC2/EKS/EMR
 - [KubeRay](https://github.com/ray-project/kuberay) A toolkit to run Ray applications on Kubernetes
+- [ray-educational-materials](https://github.com/ray-project/ray-educational-materials) This is suite of the hands-on training materials that shows how to scale CV, NLP, time-series forecasting workloads with Ray.
+
+Topics
+deep.
 
 <a name="videos" />
 
