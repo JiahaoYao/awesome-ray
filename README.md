@@ -33,6 +33,9 @@ This section contains libraries that are well-made and useful, but have not nece
 
 ## Models and Projects
 
+### Ray + LLM
+- [FastChat](https://github.com/lm-sys/FastChat) Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality
+
 ### Reinforcmenet Learning
 
 - [muzero-general](https://github.com/werner-duvaud/muzero-general) - A commented and documented implementation of MuZero based on the Google DeepMind paper (Schrittwieser et al., Nov 2019) and the associated pseudocode.
