@@ -79,9 +79,6 @@ This section contains libraries that are well-made and useful, but have not nece
 - [KubeRay](https://github.com/ray-project/kuberay) A toolkit to run Ray applications on Kubernetes
 - [ray-educational-materials](https://github.com/ray-project/ray-educational-materials) This is suite of the hands-on training materials that shows how to scale CV, NLP, time-series forecasting workloads with Ray.
 
-Topics
-deep.
-
 <a name="videos" />
 
 ## Videos
