@@ -35,6 +35,7 @@ This section contains libraries that are well-made and useful, but have not nece
 
 ### Ray + LLM
 - [FastChat](https://github.com/lm-sys/FastChat) Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality
+- [LangChain-Ray](https://github.com/ray-project/langchain-ray) Examples on how to use LangChain and Ray
 
 ### Reinforcmenet Learning
 
