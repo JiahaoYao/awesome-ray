@@ -116,7 +116,7 @@ This section contains papers focused on Ray (e.g. RAY-based library whitepapers,
 ## course
 
 - [RL course](https://github.com/anyscale/rl-course) Applied Reinforcement Learning with RLlib
-
+- [MLops course](https://github.com/anyscale/mlops-course) MLops course
 
 ## cheatsheet
 
