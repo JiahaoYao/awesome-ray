@@ -37,6 +37,7 @@ This section contains libraries that are well-made and useful, but have not nece
 - [FastChat](https://github.com/lm-sys/FastChat) Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality
 - [LangChain-Ray](https://github.com/ray-project/langchain-ray) Examples on how to use LangChain and Ray
 - [Aviary](https://github.com/ray-project/aviary) Ray Aviary - evaluate multiple LLMs easily
+- [LLM-distributed-finetune](https://github.com/AdrianBZG/LLM-distributed-finetune) Finetuning Large Language Models Efficiently on a Distributed Cluster, Uses Ray AIR to orchestrate the training on multiple AWS GPU instances.
 
 ### Reinforcmenet Learning
 
