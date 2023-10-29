@@ -82,6 +82,7 @@ This section contains libraries that are well-made and useful, but have not nece
 - [Aws-samples](https://github.com/aws-samples/aws-samples-for-ray) Ray on Amazon SageMaker/EC2/EKS/EMR
 - [KubeRay](https://github.com/ray-project/kuberay) A toolkit to run Ray applications on Kubernetes
 - [ray-educational-materials](https://github.com/ray-project/ray-educational-materials) This is suite of the hands-on training materials that shows how to scale CV, NLP, time-series forecasting workloads with Ray.
+- [Metaflow-Ray](https://github.com/outerbounds/metaflow-ray) An extension for Metaflow that enables seamless integration with Ray 
 
 <a name="videos" />
 
