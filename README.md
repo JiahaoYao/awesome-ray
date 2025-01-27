@@ -34,6 +34,7 @@ This section contains libraries that are well-made and useful, but have not nece
 ## Models and Projects
 
 ### Ray + LLM
+- [veRL](https://github.com/volcengine/verl/tree/main) veRL: Volcano Engine Reinforcement Learning for LLM
 - [FastChat](https://github.com/lm-sys/FastChat) Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality
 - [LangChain-Ray](https://github.com/ray-project/langchain-ray) Examples on how to use LangChain and Ray
 - [Aviary](https://github.com/ray-project/aviary) Ray Aviary - evaluate multiple LLMs easily
