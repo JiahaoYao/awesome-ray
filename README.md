@@ -61,6 +61,7 @@ This section contains libraries that are well-made and useful, but have not nece
 
 ### Ray + X (integration)
 
+- [Ray MCP Server](https://github.com/pradeepiyer/ray-mcp) – Bridge AI assistants to Ray clusters; manage clusters, submit jobs, and monitor resources through a Model Context Protocol interface.
 - [prefect-ray](https://github.com/PrefectHQ/prefect-ray) Prefect integrations with Ray
 - [xgboost_ray](https://github.com/ray-project/xgboost_ray) Distributed XGBoost on Ray
 - [Ray-DeepSpeed-Inference](https://github.com/tchordia/ray-serve-deepspeed) Run deepspeed on ray serve
