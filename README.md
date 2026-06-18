@@ -14,6 +14,9 @@ This is a curated list of awesome RAY libraries, projects, and other resources. 
 - [Libraries](#libraries)
 - [Models and Projects](#models-and-projects)
   - [Ray + LLM](#ray--llm)
+    - [LLM Training and Fine-tuning](#llm-training-and-fine-tuning)
+    - [LLM Post-training / RLHF](#llm-post-training--rlhf)
+    - [LLM Inference and Serving](#llm-inference-and-serving)
   - [Reinforcement Learning](#reinforcement-learning)
   - [Ray Data (Data Processing)](#ray-data-data-processing)
   - [Ray Train (Distributed Training)](#ray-train-distributed-training)
@@ -26,6 +29,8 @@ This is a curated list of awesome RAY libraries, projects, and other resources. 
   - [Distributed Computing](#distributed-computing)
   - [Ray AIR](#ray-air)
   - [Cloud Deployment](#cloud-deployment)
+  - [Reference Architectures and Cookbooks](#reference-architectures-and-cookbooks)
+  - [Legacy / Archived](#legacy--archived)
 - [Videos](#videos)
 - [Papers](#papers)
 - [Tutorials and Blog Posts](#tutorials-and-blog-posts)
@@ -50,16 +55,36 @@ This section contains libraries that are well-made and useful, but have not nece
 ## Models and Projects
 
 ### Ray + LLM
-- [veRL](https://github.com/volcengine/verl/tree/main) veRL: Volcano Engine Reinforcement Learning for LLM
-- [FastChat](https://github.com/lm-sys/FastChat) Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90% ChatGPT Quality
-- [LangChain-Ray](https://github.com/ray-project/langchain-ray) Examples on how to use LangChain and Ray
-- [Aviary](https://github.com/ray-project/aviary) Ray Aviary - evaluate multiple LLMs easily
-- [LLM-distributed-finetune](https://github.com/AdrianBZG/LLM-distributed-finetune) Finetuning Large Language Models Efficiently on a Distributed Cluster, Uses Ray AIR to orchestrate the training on multiple AWS GPU instances.
-- [LLMPerf](https://github.com/ray-project/llmperf) - A library for validating and benchmarking LLMs (updated through 2024)
+
+Ray is a core orchestration and resource-placement backend for modern LLM training, post-training, and serving stacks. Projects below are grouped by where they sit in the LLM lifecycle.
+
+#### LLM Training and Fine-tuning
+
+- [FastChat](https://github.com/lm-sys/FastChat) - An open platform for training, serving, and evaluating LLM-based chatbots (home of Vicuna); uses Ray to scale serving and evaluation workers.
+- [LLM-distributed-finetune](https://github.com/AdrianBZG/LLM-distributed-finetune) - Finetuning large language models efficiently on a distributed cluster; uses Ray AIR to orchestrate training across multiple AWS GPU instances.
+- [LangChain-Ray](https://github.com/ray-project/langchain-ray) - Examples on how to use LangChain and Ray together.
+
+#### LLM Post-training / RLHF
+
+- [veRL](https://github.com/volcengine/verl) - Volcano Engine Reinforcement Learning for LLMs; a flexible, efficient RLHF library built on Ray.
+- [OpenRLHF](https://github.com/OpenRLHF/OpenRLHF) - An easy-to-use, scalable, high-performance RLHF framework built on Ray + vLLM that distributes the actor, critic, reward, reference, and inference workloads across the cluster.
+- [ROLL](https://github.com/alibaba/ROLL) - Alibaba's efficient, user-friendly scaling library for reinforcement learning with LLMs; uses Ray for heterogeneous scheduling across training, inference, reward, and environment roles.
+- [NeMo RL](https://github.com/NVIDIA-NeMo/RL) - NVIDIA's scalable post-training library; uses Ray-based worker groups to coordinate distributed training and generation across DTensor, Megatron, and vLLM backends.
+- [SkyRL](https://github.com/NovaSky-AI/SkyRL) - A modular full-stack RL library for LLMs with GRPO, PPO, and DAPO workflows; runs training and colocated vLLM engines as a Ray job.
+- [slime](https://github.com/THUDM/slime) - An LLM post-training framework from THUDM aimed at scaling RL.
+- [OpenRLHF-M](https://github.com/OpenRLHF/OpenRLHF-M) - Multimodal RLHF: extends OpenRLHF's Ray-based architecture (actor/reward/reference/critic across GPUs + vLLM) to multimodal models.
+
+#### LLM Inference and Serving
+
+- [Ray Serve LLM](https://docs.ray.io/en/latest/serve/llm/serving-llms.html) - Official Ray Serve APIs (`ray.serve.llm`) for deploying and scaling LLMs, built around vLLM with OpenAI-compatible endpoints.
+- [Ray Data LLM](https://docs.ray.io/en/latest/data/working-with-llms.html) - Official Ray Data APIs (`ray.data.llm`) for high-throughput batch LLM inference over large datasets.
+- [vLLM](https://github.com/vllm-project/vllm) - A high-throughput, memory-efficient inference and serving engine for LLMs; Ray provides orchestration and resource placement for multi-node deployments.
+- [SGLang + Ray Serve](https://github.com/anyscale/ai-infra-cookbook) - Reference implementations of tensor- and pipeline-parallel SGLang inference across multiple nodes, orchestrated by Ray.
+- [Ray-DeepSpeed-Inference](https://github.com/tchordia/ray-serve-deepspeed) - Run DeepSpeed inference on Ray Serve.
+- [LLMPerf](https://github.com/ray-project/llmperf) - A library for validating and benchmarking LLMs.
 
 ### Reinforcement Learning
 
-- [slime](https://github.com/THUDM/slime) - A LLM post-training framework aiming at scaling RL.
 - [muzero-general](https://github.com/werner-duvaud/muzero-general) - A commented and documented implementation of MuZero based on the Google DeepMind paper (Schrittwieser et al., Nov 2019) and the associated pseudocode.
 - [rllib-torch-maddpg](https://github.com/Rohan138/rllib-torch-maddpg) - PyTorch implementation of MADDPG (Lowe et al.) in RLLib
 - [MARLlib](https://github.com/Replicable-MARL/MARLlib) - a comprehensive Multi-Agent Reinforcement Learning algorithm library
@@ -67,6 +92,7 @@ This section contains libraries that are well-made and useful, but have not nece
 
 ### Ray Data (Data Processing)
 
+- [DeltaCAT](https://github.com/ray-project/deltacat) - A portable multimodal Lakehouse powered by Ray, providing a distributed catalog, storage, ACID transactions, change-data-capture, schema evolution, and data optimization at exabyte scale.
 - [RayDP](https://github.com/intel-analytics/oap-raydp) - Distributed data processing library on Ray by running Apache Spark on Ray. Seamlessly integrates with other Ray libraries for E2E data analytics and AI pipeline.
 - [Google Cloud Platform Ray Preprocessing](https://github.com/GoogleCloudPlatform/accelerated-platforms) - Examples of Ray data preprocessing pipelines for model fine-tuning on GCP.
 
@@ -84,11 +110,13 @@ This section contains libraries that are well-made and useful, but have not nece
 ### Ray Serve (Model Serving)
 
 - [LangChain Ray Serve](https://python.langchain.com/docs/integrations/providers/ray_serve/) - Deploy LangChain applications and OpenAI chains in production using Ray Serve.
+- [Scalable MCP servers with Ray Serve](https://docs.ray.io/en/latest/serve/tutorials/mcp.html) - Official tutorials for turning Model Context Protocol (MCP) servers into scalable, fault-tolerant HTTP services with Ray Serve.
+
+> For LLM-specific serving (Ray Serve LLM, vLLM, SGLang), see [LLM Inference and Serving](#llm-inference-and-serving).
 
 ### Ray + JAX / TPU
 
 - [Swarm-jax](https://github.com/kingoflolz/swarm-jax) - Swarm training framework using Haiku + JAX + Ray for layer parallel transformer language models on unreliable, heterogeneous nodes
-- [Alpa](https://github.com/alpa-projects/alpa) - Auto parallelization for large-scale neural networks using Jax, XLA, and Ray
 
 
 ### Ray + Database
@@ -102,7 +130,7 @@ This section contains libraries that are well-made and useful, but have not nece
 - [Ray MCP Server](https://github.com/pradeepiyer/ray-mcp) – Bridge AI assistants to Ray clusters; manage clusters, submit jobs, and monitor resources through a Model Context Protocol interface.
 - [prefect-ray](https://github.com/PrefectHQ/prefect-ray) Prefect integrations with Ray
 - [xgboost_ray](https://github.com/ray-project/xgboost_ray) Distributed XGBoost on Ray
-- [Ray-DeepSpeed-Inference](https://github.com/tchordia/ray-serve-deepspeed) Run deepspeed on ray serve
+- [lightgbm_ray](https://github.com/ray-project/lightgbm_ray) Distributed LightGBM on Ray — companion to xgboost_ray with multi-node/multi-GPU training, distributed data loading, fault handling, and Ray Tune integration.
 
 ### Ray-Project
 - [SkyPilot](https://github.com/skypilot-org/skypilot) a framework for easily running machine learning workloads on any cloud through a unified interface
@@ -127,8 +155,21 @@ This section contains libraries that are well-made and useful, but have not nece
 - [AutoGluon](https://github.com/awslabs/autogluon) AutoML for Image, Text, and Tabular Data
 - [Aws-samples](https://github.com/aws-samples/aws-samples-for-ray) Ray on Amazon SageMaker/EC2/EKS/EMR
 - [KubeRay](https://github.com/ray-project/kuberay) A toolkit to run Ray applications on Kubernetes
-- [ray-educational-materials](https://github.com/ray-project/ray-educational-materials) This is suite of the hands-on training materials that shows how to scale CV, NLP, time-series forecasting workloads with Ray.
 - [Metaflow-Ray](https://github.com/outerbounds/metaflow-ray) An extension for Metaflow that enables seamless integration with Ray 
+
+### Reference Architectures and Cookbooks
+
+- [Anyscale AI Infra Cookbook](https://github.com/anyscale/ai-infra-cookbook) - A collection of runnable, Ray-orchestrated examples spanning the full LLM lifecycle: data curation, Megatron training, SkyRL post-training, vLLM/SGLang serving, robotics, and fault-tolerant MoE deployment.
+
+### Legacy / Archived
+
+Projects in this section are archived, unmaintained, or have been superseded by official Ray APIs. They are kept for historical reference.
+
+- [Aviary / RayLLM](https://github.com/ray-project/aviary) - **Archived.** Superseded by the official `ray.serve.llm` ([Ray Serve LLM](https://docs.ray.io/en/latest/serve/llm/serving-llms.html)) and `ray.data.llm` ([Ray Data LLM](https://docs.ray.io/en/latest/data/working-with-llms.html)) APIs after they were upstreamed into Ray.
+- [Alpa](https://github.com/alpa-projects/alpa) - **Archived (Oct 2024).** Auto-parallelization for large-scale neural networks using JAX, XLA, and Ray; described by its maintainers as an unmaintained research artifact.
+- [ray-educational-materials](https://github.com/ray-project/ray-educational-materials) - **Archived (read-only since Mar 2024).** Hands-on training materials for scaling CV, NLP, and time-series workloads with Ray.
+
+> Intentionally **not** listed: `tune-sklearn` (the Ray team recommends migrating directly to Ray Tune) and Intel's `llm-on-ray` (discontinued by Intel) — both are unmaintained.
 
 <a name="videos" />
 
@@ -142,7 +183,7 @@ This section contains libraries that are well-made and useful, but have not nece
 
 ### Conference Talks
 - [Ray Summit 2024](https://www.anyscale.com/ray-summit/2024) - Annual Ray conference with recorded sessions on YouTube (Sep 30 - Oct 2, 2024)
-- [Ray Summit 2025](https://raysummit.anyscale.com/) - Upcoming conference (Nov 3-5, 2025, San Francisco)
+- [Ray Summit 2025](https://raysummit.anyscale.com/) - Annual Ray conference with recorded sessions on YouTube (Nov 3-5, 2025, San Francisco)
 
 <a name="papers" />
 
